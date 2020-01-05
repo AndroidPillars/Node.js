@@ -38,6 +38,13 @@ console.log("Hello World")
 - In cmd prompt -> check -> node -> print -> global -> which lists the properties
 - for Exit -> process.exit();
 
+# Getting started with Node.Js
+
+- Install -> Visual Studio Code -> Create Folder in drive -> Open that Folder through Visual Studio Code.
+- Create app.js -> print -> console.log("Hello World"); 
+- Go to the App folder -> Enter cmd at the top bar -> In cmd prompt -> node app.js
+- O/P -> Hello World
+
 
 
 
