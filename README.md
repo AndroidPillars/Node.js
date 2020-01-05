@@ -38,12 +38,35 @@ console.log("Hello World")
 - In cmd prompt -> check -> node -> print -> global -> which lists the properties
 - for Exit -> process.exit();
 
-# Getting started with Node.Js
+# Getting started with Node.Js:
 
 - Install -> Visual Studio Code -> Create Folder in drive -> Open that Folder through Visual Studio Code.
 - Create app.js -> print -> console.log("Hello World"); 
 - Go to the App folder -> Enter cmd at the top bar -> In cmd prompt -> node app.js
 - O/P -> Hello World
+
+# Functions:
+
+- In JavaScript, Functions are first class objects. which means they can be,
+<br> - Stored in a variable, object, or array.
+<br> - Passed as an argument to a function.
+<br> - Returned from a function.
+
+- In JavaScript we use var/let/const for creating variables.
+
+Syntax:
+
+function sum(a,b){
+return a+b;
+}
+
+const total = sum(4,5);
+console.log("Total: ", total);
+
+O/P -> Total: 9
+
+
+
 
 
 
