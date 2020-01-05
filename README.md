@@ -71,6 +71,7 @@ O/P -> Total: 9
 - Create helper.js -> which Export and Import that in -> app.js
 - Syntax -> console.log("Process: ", process);
 - If we run -> find a object -> Module -> exports -> which is currently empty.
+- require -> which is used to load own module or core node js modules as well as third party modules. 
 
 Syntax:
 
@@ -117,6 +118,25 @@ const sum = (a,b) => a+b;
 or
 
 exports.sum = (a,b) => a+b;
+
+# Object Destructuring:
+
+app.js:
+
+const helpers = require("./helpers");
+
+const total = helpers.sum(4,5);
+
+console.log("Total: ", total);
+
+as,
+
+const { sum } = require("./helpers");
+
+const total = sum(4,5);
+
+console.log("Total: ", total);
+
 
 
 
