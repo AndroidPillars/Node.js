@@ -34,7 +34,7 @@ console.log("Hello World")
 
 # JavaScript in Node.js Environment:
 
-- Similarly like window object in Node we are having global.
+- Similarly like window object in Node we are having global and process for document.
 - In cmd prompt -> check -> node -> print -> global -> which lists the properties
 - for Exit -> process.exit();
 
@@ -64,6 +64,40 @@ const total = sum(4,5);
 console.log("Total: ", total);
 
 O/P -> Total: 9
+
+# Import/Export:
+
+- Seperate the file which we are using as common.
+- Create helper.js -> which Export and Import that in -> app.js
+- Syntax -> console.log("Process: ", process);
+- If we run -> find a object -> Module -> exports -> which is currently empty.
+
+Syntax:
+
+helper.js:
+
+function sum(a,b){
+return a+b;
+}
+
+module.exports = {
+sum
+};
+
+console.log("Process: ", process);
+
+app.js:
+
+const helpers = require("./helpers");
+
+const total = helpers.sum(4,5);
+
+console.log("Total: ", total);
+
+
+
+
+
 
 
 
