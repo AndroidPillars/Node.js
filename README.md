@@ -94,6 +94,32 @@ const total = helpers.sum(4,5);
 
 console.log("Total: ", total);
 
+# Arrow Function:
+
+- Compare to Normal functions, Arrow functions don't have their context(i.e)this keyword.
+
+helpers.js:
+
+function sum(a,b){
+return a+b;
+}
+
+as,
+
+const sum = (a,b) => {
+return a+b;
+}
+
+or
+
+const sum = (a,b) => a+b;
+
+or
+
+exports.sum = (a,b) => a+b;
+
+
+
 
 
 
