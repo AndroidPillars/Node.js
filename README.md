@@ -23,6 +23,16 @@ console.log("Hello World")
 - In cmd prompt -> check -> node -v -> To check the current version.
 - Eg: In cmd prompt -> check -> node -> print -> console.log("Hello World")
 
+# JavaScript in Browser Environment:
+
+ In the Browser Environment window object is the top level wrapper object and the document object inside window object.
+ 
+- In Browser -> Inspect -> console -> window -> displays windows properties
+- window.open("www.AndroidPillars.com")
+- window.document -> indicates the current screen of browser.
+- document.querySelector("body").style.backgroundColor="red"; -> changes the background color of the screen.
+
+
 
 
 
