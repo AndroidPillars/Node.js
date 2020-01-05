@@ -32,6 +32,16 @@ console.log("Hello World")
 - window.document -> indicates the current screen of browser.
 - document.querySelector("body").style.backgroundColor="red"; -> changes the background color of the screen.
 
+# JavaScript in Node.js Environment:
+
+- Similarly like window object in Node we are having global.
+- In cmd prompt -> check -> node -> print -> global -> which lists the properties
+- for Exit -> process.exit();
+
+
+
+
+
 
 
 
