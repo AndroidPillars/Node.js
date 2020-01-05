@@ -74,7 +74,7 @@ O/P -> Total: 9
 
 Syntax:
 
-helper.js:
+helpers.js:
 
 function sum(a,b){
 return a+b;
