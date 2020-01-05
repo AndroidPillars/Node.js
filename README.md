@@ -153,6 +153,9 @@ const total = sum(4,5);
 
 console.log("Total: ", total);
 
+- Run the cmd prompt O/P
+- Now in Browser -> http://localhost:3000/ -> We created the Server using http module.
+
 
 
 
