@@ -96,8 +96,9 @@
   - Passed as an argument to a function.
   - Returned from a function.
 - In JavaScript we use var/let/const for creating variables.  
-- <b>In app.js</b>   
- &nbsp;  
+  &nbsp;  
+  <b>In app.js</b>   
+  &nbsp;  
   ```ruby
 
   function sum(a,b){
