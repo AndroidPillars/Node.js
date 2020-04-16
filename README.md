@@ -12,7 +12,7 @@
 
 - Using JavaScript.
 - Extremly Fast.
-- Utilize Google's V8 engine writeen in C++.
+- Utilize Google's V8 engine written in C++.
 - V8 compiles JavaScript code in to machine code for computer.
 - Build Web, Mobile and Desktop Apps.
 
