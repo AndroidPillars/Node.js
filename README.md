@@ -63,9 +63,20 @@
 
 # JavaScript in Node.js Environment:
 
-- Similarly like window object in Node we are having global and process for document.
-- In cmd prompt -> check -> node -> print -> global -> which lists the properties
-- for Exit -> process.exit();
+- Similarly like <b>window</b> object in Node we are having <b>global</b> and process for document.  
+ &nbsp;  
+  ```ruby
+    node
+  ```
+  ```ruby
+    global
+  ```
+  - Which lists the properties
+- for <b>Exit</b>  
+  &nbsp;  
+  ```ruby
+    process.exit();
+  ```
 
 # Getting started with Node.Js:
 
