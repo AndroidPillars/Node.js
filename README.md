@@ -96,7 +96,7 @@
   - Passed as an argument to a function.
   - Returned from a function.
 - In JavaScript we use var/let/const for creating variables.  
-  - In app.js,  
+- <b>In app.js</b>   
  &nbsp;  
   ```ruby
 
