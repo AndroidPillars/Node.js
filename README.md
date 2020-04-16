@@ -126,7 +126,7 @@
   - where, process is similar to that of document in window
 - If we run -> find a object -> Module -> exports: {} -> which is currently empty.
 - We can add the functions that we create can add them in exports.
-- Finally, whatever we are adding in the exports will be available in the entire application.
+- Finally, whatever we are adding in the exports will be available in the entire application.  
   &nbsp;  
   <b>In helpers.js</b>  
   &nbsp;  
