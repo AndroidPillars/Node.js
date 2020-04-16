@@ -149,27 +149,33 @@
   const total = helpers.sum(4, 5);
   console.log("Total: ", total);
   ```
-- where require, is used to load own module or core node js modules as well as third party modules. 
+- where <b>require</b>, is used to load own module or core node js modules as well as third party modules. 
 
 # Arrow Function:
 
 - Compare to Normal functions, Arrow functions don't have their context(i.e)this keyword.
 
-helpers.js:
+  <b>In helpers.js</b>
 
-function sum(a,b){
-return a+b;
-}
+  ```ruby
+  function sum(a,b){
+    return a+b;
+  }
+  ```
+  ```ruby
+  const sum = (a,b) => {
+    return a+b;
+  }
+  ```
+  ```ruby
+  const sum = (a,b) => a+b;
+  ```
+  ```ruby
+  const sum = () => {
+    return a+b;
+  }
+  ```
 
-as,
-
-const sum = (a,b) => {
-return a+b;
-}
-
-or
-
-const sum = (a,b) => a+b;
 
 or
 
