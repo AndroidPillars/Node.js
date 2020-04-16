@@ -5,6 +5,8 @@
   &nbsp;  
   ```ruby
   window.alert("Hello World")
+  ```
+  ```ruby
   console.log("Hello World")
   ```
 
@@ -27,7 +29,7 @@
   ```ruby
     node -v
   ```
-- Example,
+- <b>Example</b>,  
   &nbsp;  
   ```ruby
     node
