@@ -81,7 +81,7 @@
 # Getting started with Node.Js
 
 - Install -> Visual Studio Code -> Create Folder in required drive -> Open that Folder through Visual Studio Code.
-- Create app.js -> print
+- Create app.js -> print  
   &nbsp;  
   ```ruby
     console.log("Hello World"); 
@@ -89,7 +89,7 @@
 - Go to the App folder -> Enter cmd at the top bar -> In cmd prompt -> node app.js
 - O/P -> Hello World
 
-# Functions:
+# Functions
 
 - In JavaScript, Functions are first class objects. which means they can be,
 <br> - Stored in a variable, object, or array.
