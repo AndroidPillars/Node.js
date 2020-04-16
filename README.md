@@ -40,11 +40,20 @@
 
 # JavaScript in Browser Environment:
 
- In the Browser Environment window object is the top level wrapper object and the document object inside window object.
- 
-- In Browser -> Inspect -> console -> window -> displays windows properties
-- window.open("www.AndroidPillars.com")
-- window.document -> indicates the current screen of browser.
+ - In the Browser Environment window object is the top level wrapper object and the document object will come inside window   object.
+- In Browser -> Inspect -> console. 
+  &nbsp;  
+  ```ruby
+    window
+  ```
+    - It displays windows properties
+  ```ruby
+    window.open("www.AndroidPillars.com")
+  ```
+  ```ruby
+    window.document
+  ```
+   - indicates the current screen of browser.
 - document.querySelector("body").style.backgroundColor="red"; -> changes the background color of the screen.
 
 # JavaScript in Node.js Environment:
