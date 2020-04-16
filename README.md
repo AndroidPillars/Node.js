@@ -117,33 +117,38 @@
 
 # Import/Export:
 
-- Seperate the file which we are using as common.
-- Create helper.js -> which Export and Import that in -> app.js
-- Syntax -> console.log("Process: ", process);
-- If we run -> find a object -> Module -> exports -> which is currently empty.
-- require -> which is used to load own module or core node js modules as well as third party modules. 
+- Seperate the file which we are going to use as common.
+- Create helper.js -> which Export and Import that in -> app.js  
+  &nbsp;  
+  ```ruby
+  console.log("Process: ", process);
+  ```
+  - where, process is similar to that of document in window
+- If we run -> find a object -> Module -> exports: {} -> which is currently empty.
+- We can add the functions that we create can add them in exports.
+- Finally, whatever we are adding in the exports will be available in the entire application.
+  &nbsp;  
+  <b>In helpers.js</b>  
+  &nbsp;  
+  ```ruby
+  function sum(a, b) {
+    return a + b;
+  }
 
-Syntax:
+  module.exports = {
+    sum
+  };
 
-helpers.js:
+  ```  
+  <b>In app.js</b>  
+  &nbsp;  
+  ```ruby
+  const helpers = require("./helpers");
 
-function sum(a,b){
-return a+b;
-}
-
-module.exports = {
-sum
-};
-
-console.log("Process: ", process);
-
-app.js:
-
-const helpers = require("./helpers");
-
-const total = helpers.sum(4,5);
-
-console.log("Total: ", total);
+  const total = helpers.sum(4, 5);
+  console.log("Total: ", total);
+  ```
+- where require, is used to load own module or core node js modules as well as third party modules. 
 
 # Arrow Function:
 
