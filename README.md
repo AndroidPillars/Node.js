@@ -57,7 +57,7 @@
    - window.document indicates the current screen of browser.  
    &nbsp;  
     ```ruby
-    document.querySelector("body").style.backgroundColor="red";
+    document.querySelector("body").style.backgroundColor = "red";
     ```
    - It changes the background color of the screen.
 
