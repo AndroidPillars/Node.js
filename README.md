@@ -27,7 +27,14 @@
   ```ruby
     node -v
   ```
-- Eg: In cmd prompt -> check -> node -> print -> console.log("Hello World")
+- Example,
+  &nbsp;  
+  ```ruby
+    node
+  ```
+  ```ruby
+    console.log("Hello World")
+  ```
 
 # JavaScript in Browser Environment:
 
