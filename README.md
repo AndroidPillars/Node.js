@@ -27,15 +27,15 @@
 - To check the current version  
   &nbsp;  
   ```ruby
-    node -v
+  node -v
   ```
 - <b>Example</b>,  
   &nbsp;  
   ```ruby
-    node
+  node
   ```
   ```ruby
-    console.log("Hello World")
+  console.log("Hello World")
   ```
 
 # JavaScript in Browser Environment
@@ -44,15 +44,15 @@
 - In Browser -> Inspect -> console  
   &nbsp;  
   ```ruby
-    window
+  window
   ```
     - where, window displays windows properties  
     &nbsp;  
   ```ruby
-    window.open("www.AndroidPillars.com")
+  window.open("www.AndroidPillars.com")
   ```
   ```ruby
-    window.document
+  window.document
   ```
    - window.document indicates the current screen of browser.  
    &nbsp;  
@@ -66,16 +66,16 @@
 - Similarly like <b>window</b> object in Node we are having <b>global</b> and process for document.  
  &nbsp;  
   ```ruby
-    node
+  node
   ```
   ```ruby
-    global
+  global
   ```
   - Which lists the properties
 - for <b>Exit</b>  
   &nbsp;  
   ```ruby
-    process.exit();
+  process.exit();
   ```
 
 # Getting started with Node.Js
@@ -84,7 +84,7 @@
 - Create app.js -> print  
   &nbsp;  
   ```ruby
-    console.log("Hello World"); 
+  console.log("Hello World"); 
   ```
 - Go to the App folder -> Enter cmd at the top bar -> In cmd prompt -> node app.js
 - O/P -> Hello World
