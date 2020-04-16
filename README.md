@@ -72,7 +72,7 @@
   global
   ```
   - Which lists the properties
-- for <b>Exit</b>,  
+- To <b>Exit</b>,  
   &nbsp;  
   ```ruby
   process.exit();
