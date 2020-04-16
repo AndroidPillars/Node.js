@@ -38,7 +38,7 @@
     console.log("Hello World")
   ```
 
-# JavaScript in Browser Environment:
+# JavaScript in Browser Environment
 
  - In the Browser Environment window object is the top level wrapper object and the document object will come inside window   object.
 - In Browser -> Inspect -> console  
@@ -61,7 +61,7 @@
     ```
    - It changes the background color of the screen.
 
-# JavaScript in Node.js Environment:
+# JavaScript in Node.js Environment
 
 - Similarly like <b>window</b> object in Node we are having <b>global</b> and process for document.  
  &nbsp;  
@@ -78,10 +78,14 @@
     process.exit();
   ```
 
-# Getting started with Node.Js:
+# Getting started with Node.Js
 
-- Install -> Visual Studio Code -> Create Folder in drive -> Open that Folder through Visual Studio Code.
-- Create app.js -> print -> console.log("Hello World"); 
+- Install -> Visual Studio Code -> Create Folder in required drive -> Open that Folder through Visual Studio Code.
+- Create app.js -> print
+  &nbsp;  
+  ```ruby
+    console.log("Hello World"); 
+  ```
 - Go to the App folder -> Enter cmd at the top bar -> In cmd prompt -> node app.js
 - O/P -> Hello World
 
