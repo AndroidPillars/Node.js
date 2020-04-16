@@ -92,22 +92,27 @@
 # Functions
 
 - In JavaScript, Functions are first class objects. which means they can be,
-<br> - Stored in a variable, object, or array.
-<br> - Passed as an argument to a function.
-<br> - Returned from a function.
+  -  Stored in a variable, object, or array.
+  - Passed as an argument to a function.
+  - Returned from a function.
+- In JavaScript we use var/let/const for creating variables.  
+ &nbsp;  
+  ```ruby
 
-- In JavaScript we use var/let/const for creating variables.
+  function sum(a,b){
+  return a+b;
+  }
 
-Syntax:
+  const total = sum(4,5);
+  console.log("Total: ", total);
 
-function sum(a,b){
-return a+b;
-}
-
-const total = sum(4,5);
-console.log("Total: ", total);
-
-O/P -> Total: 9
+  ```
+  - To Run in Terminal,  
+  &nbsp;  
+    ```ruby
+    node app.js
+    ```
+  - O/P -> Total: 9
 
 # Import/Export:
 
