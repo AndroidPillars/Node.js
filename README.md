@@ -208,7 +208,7 @@ const total = sum(4, 5);
 console.log("Total: ", total);
 ```
 
-# Node Js Core Modules:
+# Node Js Core Modules
 
 <b>In app.js</b>  
 &nbsp;   
@@ -233,9 +233,3 @@ console.log("Total: ", total);
 - Now in Browser -> http://localhost:3000/
 - O/P -> Hello World
 - We created the Server using http module using node js.
-  
-  
-
-
-
-
