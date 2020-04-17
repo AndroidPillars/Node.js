@@ -307,3 +307,5 @@ console.log("Total: ", total);
     ```
 - Once you Saved, Now in Browser -> http://localhost:3000/
 - O/P -> Hello World
+
+# Node js Event Loop
