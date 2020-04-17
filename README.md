@@ -233,3 +233,47 @@ console.log("Total: ", total);
 - Now in Browser -> http://localhost:3000/
 - O/P -> Hello World
 - We created the Server using http module using node js.
+
+# npm
+
+- npm is the package manager for JavaScript and the world's largest software registry.
+- Visit, https://www.npmjs.com/
+- Search -> nodemon
+- If we made any changes in Local then have to restart the server to communicate to the browser. To overcome that, we will
+  nodemon
+- First we need to install npm in project directory  
+  &nbsp;   
+  ```ruby
+  npm init
+  ```
+- By Entering the necessary details it will create the file named package.json in the project directory.
+- Now, In the Terminal
+  &nbsp;   
+  ```ruby
+  npm i nodemon
+  ```
+- Once it done you can find "dependencies": { "nodemon" } in package.json.
+- Now, In "scripts" -> change as below mwntioned,
+  &nbsp;   
+  ```ruby
+  "scripts": {
+    "dev": "node app.js"
+  },
+  ```
+- Now, you can check by running the terminal as,  
+  &nbsp;   
+  ```ruby
+  npm run dev
+  ```
+- For changing that in nodemon
+  &nbsp;   
+  ```ruby
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  ```
+- Now, you can check by running the terminal as,  
+  &nbsp;   
+  ```ruby
+  npm run dev
+  ```
