@@ -433,3 +433,20 @@ console.log("Total: ", total);
 - Event Loop
 - Asynchronous (non-blocking) vs Synchronous (blocking)
 
+# Creating Server with express
+
+- Now Open the Text Editor and Create a new project
+- In the Terminal Run  
+    &nbsp;   
+    ```ruby
+    npm init
+    ```
+- By Entering the necessary details it will create the file named package.json in the project directory.
+- Now, In the Terminal
+    &nbsp;   
+    ```ruby
+    npm i express
+    ```
+
+
+
