@@ -442,11 +442,43 @@ console.log("Total: ", total);
     npm init
     ```
 - By Entering the necessary details it will create the file named package.json in the project directory.
-- Now, In the Terminal
+- Now, In the Terminal run, for installing express  
     &nbsp;   
     ```ruby
     npm i express
     ```
+- Now, In the Terminal run, for installing nodemon  
+    &nbsp;   
+    ```ruby
+    npm i nodemon
+    ```
+- Now, In "scripts" -> change as below mentioned,  
+  &nbsp;   
+  ```ruby
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  ```
+- Now, you can check by running the terminal as,  
+  &nbsp;   
+  ```ruby
+  npm run dev
+  ```
+   &nbsp;   
+  <b>In app.js</b>  
+   &nbsp;   
+    ```ruby
+    const express = require("express");
+    const app = express();
 
+    app.get("/", (req, res) => {
+      res.send("Hello World");
+    });
 
+    const port = 8080;
 
+    app.listen(port, () => {
+      console.log(`Node js Api is Listening on port: ${port}`);
+    });
+    ```
