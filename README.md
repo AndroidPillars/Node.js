@@ -247,13 +247,13 @@ console.log("Total: ", total);
   npm init
   ```
 - By Entering the necessary details it will create the file named package.json in the project directory.
-- Now, In the Terminal
+- Now, In the Terminal  
   &nbsp;   
   ```ruby
   npm i nodemon
   ```
 - Once it done you can find "dependencies": { "nodemon" } in package.json.
-- Now, In "scripts" -> change as below mwntioned,
+- Now, In "scripts" -> change as below mentioned,  
   &nbsp;   
   ```ruby
   "scripts": {
@@ -265,7 +265,7 @@ console.log("Total: ", total);
   ```ruby
   npm run dev
   ```
-- For changing that in nodemon
+- For changing that in nodemon  
   &nbsp;   
   ```ruby
   "scripts": {
