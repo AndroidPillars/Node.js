@@ -116,7 +116,7 @@
     ```
   - O/P -> Total: 9
 
-# Import/Export:
+# Import/Export
 
 - Seperate the file which we are going to use as common.
 - Create helper.js -> which Export and Import that in -> app.js  
@@ -151,7 +151,7 @@
   ```
 - where <b>require</b>, is used to load own module or core node js modules as well as third party modules. 
 
-# Arrow Function:
+# Arrow Function
 
 - It is short, easy to understand and use.
 - Compare to Normal functions, Arrow functions don't have their context(i.e)this keyword.
@@ -190,7 +190,7 @@
   exports.sum = (a,b) => a+b;
   ```
 
-# Object Destructuring:
+# Object Destructuring
 
 <b>In app.js</b>  
 &nbsp;  
