@@ -368,3 +368,28 @@ console.log("Total: ", total);
     ```
 # Node js Synchronous Programming
 
+- In Node js there is certain method available for doing Synchronous.
+- They will be executed one by one but it will wait till certain task to get complete.
+   &nbsp;   
+  <b>In app.js</b>  
+   &nbsp;   
+    ```ruby
+    const fs = require("fs");
+    const fileName = "target.txt";
+
+    const data = fs.readFileSync(fileName)
+    console.log(data.toString());
+
+    console.log('Node js async programming...');
+    ```
+  <b>In target.txt</b>  
+   &nbsp;   
+    ```ruby
+    Hi glad to see you again!!!!!
+    ```
+  - Now, you can run the server using,  
+    &nbsp;   
+    ```ruby
+    npm run dev
+    ```
+
