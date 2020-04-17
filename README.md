@@ -334,3 +334,35 @@ console.log("Total: ", total);
   npm run dev
   ```
 - If you done any changes in target.txt and save then the callback gets hitted.
+
+# Node js Asynchronous Programming
+
+- Node js is single threaded non blocking I/O model.
+- Even though it is single threaded - it is efficient because it is using non blocking event loop and keeps the event in a       stack.
+- They will be executed one by one with out waiting for any one of these to complete instead they will be executed and           completed as the process is running in other callbacks.  
+  &nbsp;   
+  <b>In app.js</b>  
+   &nbsp;   
+    ```ruby
+    const fs = require("fs");
+    const fileName = "target.txt";
+
+    fs.readFile(fileName, (err, data) => {
+        if (err) {
+            console.log(err)
+        }
+        console.log(data.toString())
+    });
+
+    console.log('Node js async programming...');
+    ```
+  <b>In target.txt</b>  
+   &nbsp;   
+    ```ruby
+    Hi glad to see you again!!!!!
+    ```
+  - Now, you can run the server using,  
+    &nbsp;   
+    ```ruby
+    npm run dev
+    ```
