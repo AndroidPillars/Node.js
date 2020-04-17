@@ -316,6 +316,7 @@ console.log("Total: ", total);
   will handle through the callback function.
 - It's start executing job if it takes longer than usual it will leave that responsibility to the callback function which will   eventually return once the process is done.
 - Node js is a single threaded system.  
+  &nbsp;   
   <b>In app.js</b>  
     &nbsp;   
     ```ruby
