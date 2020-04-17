@@ -425,5 +425,11 @@ console.log("Total: ", total);
     ```ruby
     npm run dev
     ```
-    
+
+# Thinks to get remember in Node js
+
+- JavaScript Environment Browser/Server
+- Understanding functions/Callback functions
+- Event Loop
+- Asynchronous (non-blocking) vs Synchronous (blocking)
 
