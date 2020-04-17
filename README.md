@@ -153,10 +153,11 @@
 
 # Arrow Function:
 
+- It is short, easy to understand and use.
 - Compare to Normal functions, Arrow functions don't have their context(i.e)this keyword.
 
-  <b>In helpers.js</b>
-
+  <b>In helpers.js</b>  
+  &nbsp;  
   ```ruby
   function sum(a,b){
     return a+b;
@@ -175,11 +176,23 @@
     return a+b;
   }
   ```
-
-
-or
-
-exports.sum = (a,b) => a+b;
+   - The above function indicates that there is no arguements.  
+  &nbsp;  
+  ```ruby
+  const sum = a => {
+    return a;
+  }
+  ```
+   - The above function indicates that there is only one arguements. 
+  &nbsp;  
+  ```ruby
+  module.exports = {
+    sum
+  };
+  ```  
+  ```ruby
+  exports.sum = (a,b) => a+b;
+  ```
 
 # Object Destructuring:
 
@@ -217,24 +230,5 @@ console.log("Total: ", total);
 
 - Run the cmd prompt O/P
 - Now in Browser -> http://localhost:3000/ -> We created the Server using http module.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
