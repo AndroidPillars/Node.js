@@ -293,3 +293,16 @@ console.log("Total: ", total);
   ```ruby
   npm run dev
   ```
+<b>In app.js</b>  
+  &nbsp;   
+  ```ruby
+  const express = require('express')
+  const app = express()
+ 
+  app.get('/', (req, res) => {
+    res.send('Hello World')
+  })
+ 
+  app.listen(3000)
+  ```
+
