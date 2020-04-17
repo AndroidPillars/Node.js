@@ -392,4 +392,38 @@ console.log("Total: ", total);
     ```ruby
     npm run dev
     ```
+    
+# Functional Approach
+
+- Distribute the responsibilities to different functions.
+  &nbsp;   
+  <b>In app.js</b>  
+   &nbsp;   
+    ```ruby
+    const fs = require("fs");
+    const fileName = "target.txt";
+
+    const mErrorHandler = mError => console.log(mError);
+
+    const mDataHandler = data => console.log(data.toString());
+
+    fs.readFile(fileName, (mError, data) => {
+        if (mError) mErrorHandler(mError)
+
+        mDataHandler(data)
+    });
+
+    console.log('Node js async programming...');
+    ```
+  <b>In target.txt</b>  
+   &nbsp;   
+    ```ruby
+    Hi glad to see you again!!!!!
+    ```
+  - Now, you can run the server using,  
+    &nbsp;   
+    ```ruby
+    npm run dev
+    ```
+    
 
