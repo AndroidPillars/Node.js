@@ -229,8 +229,10 @@ console.log("Total: ", total);
   - <b>http</b> module comes with the create server method form which we can create the server.
   - 3000 is the port number.  
   &nbsp;   
-- Run the cmd prompt O/P
-- Now in Browser -> http://localhost:3000/ -> We created the Server using http module using node js.
+- Now, Run the Terminal
+- Now in Browser -> http://localhost:3000/
+- O/P -> Hello World
+- We created the Server using http module using node js.
   
   
 
