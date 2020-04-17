@@ -460,12 +460,7 @@ console.log("Total: ", total);
     "dev": "nodemon app.js"
   },
   ```
-- Now, you can check by running the terminal as,  
   &nbsp;   
-  ```ruby
-  npm run dev
-  ```
-   &nbsp;   
   <b>In app.js</b>  
    &nbsp;   
     ```ruby
@@ -482,3 +477,8 @@ console.log("Total: ", total);
       console.log(`Node js Api is Listening on port: ${port}`);
     });
     ```
+- Now, you can check by running the terminal as,  
+  &nbsp;   
+  ```ruby
+  npm run dev
+  ```
