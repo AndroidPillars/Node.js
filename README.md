@@ -192,21 +192,21 @@
 
 # Object Destructuring:
 
-app.js:
-
+<b>In app.js</b>  
+&nbsp;  
+```ruby
 const helpers = require("./helpers");
 
 const total = helpers.sum(4,5);
 
 console.log("Total: ", total);
-
-as,
-
+```
+```ruby
 const { sum } = require("./helpers");
 
-const total = sum(4,5);
-
+const total = sum(4, 5);
 console.log("Total: ", total);
+```
 
 # Node Js Core Modules:
 
