@@ -210,21 +210,30 @@ console.log("Total: ", total);
 
 # Node Js Core Modules:
 
+<b>In app.js</b>  
+&nbsp;   
+```ruby
 const { sum } = require("./helpers");
+const http = require('http')
 
-const http = require("http"); //Load from core node module
+const server = http.createServer((req, res) => {
+    res.end("Hello World")
+})
 
-const server = http.createServer((req,res) => {
- res.end("Hello World");
- });
- 
- sever.listen(3000);
+server.listen(3000);
 
-const total = sum(4,5);
-
+const total = sum(4, 5);
 console.log("Total: ", total);
-
+```
+  - where, http it is the core mdoule comes from the node js.
+  - <b>http</b> module comes with the create server method form which we can create the server.
+  - 3000 is the port number.  
+  &nbsp;   
 - Run the cmd prompt O/P
-- Now in Browser -> http://localhost:3000/ -> We created the Server using http module.
+- Now in Browser -> http://localhost:3000/ -> We created the Server using http module using node js.
+  
+  
+
+
 
 
