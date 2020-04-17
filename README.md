@@ -309,3 +309,10 @@ console.log("Total: ", total);
 - O/P -> Hello World
 
 # Node js Event Loop
+
+- Node js is a process that never stops.
+- During multiple events process it Serves as First in and First out order(i.e) It does the job and move on to the next one.
+- In some jobs it may take longer than usual(i.e)Reaching out to the remote sever, Connecting to the Database at that time it
+  will handle through the callback function.
+- It's start executing job if it takes longer than usual it will leave that responsibility to the callback function which will   eventually return once the process is done.
+- Node js is a single threaded system.
