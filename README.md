@@ -172,18 +172,14 @@
   const sum = (a,b) => a+b;
   ```
   ```ruby
-  const sum = () => {
-    return a+b;
-  }
+  const sum = () => return a+b;
   ```
    - The above function indicates that there is no arguements.  
   &nbsp;  
   ```ruby
-  const sum = a => {
-    return a;
-  }
+  const sum = a => return a;
   ```
-   - The above function indicates that there is only one arguements. 
+   - The above function indicates that there is only one arguements.  
   &nbsp;  
   ```ruby
   module.exports = {
