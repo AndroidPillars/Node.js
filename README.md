@@ -501,10 +501,66 @@ console.log("Total: ", total);
       console.log(`Node js Api is Listening on port: ${port}`);
    });
    ```
- <b>In post.js</b>  
+<b>In post.js</b>  
    &nbsp; 
    ```ruby
    exports.getPosts = (req, res) => {
       res.send("Hello World!!!");
    };
    ```
+- Now, you can check by running the terminal as,  
+  &nbsp;   
+  ```ruby
+  npm run dev
+  ```
+  
+# Middleware Explained
+
+- Middleware executes in the middle(i.e) If something is Started or something going to end, inbetween we are going to do         something at the middle.
+- Morgan is used to know in Terminal from which route you are getting the request.
+- Now, In the Terminal   
+  &nbsp;   
+  ```ruby
+  npm i morgan
+  ```
+- We can see one of the example in Middleware using Morgan.
+- We can use the middleware using app.use() method.
+  &nbsp;  
+  <b>In app.js</b>  
+  &nbsp;  
+  ```ruby
+  const express = require("express");
+  const app = express();
+  const morgan = require("morgan");
+
+  const { getPosts } = require("./routes/post");
+
+  const mOwnMiddelWare = (req, res, next) => {
+    console.log("middleware applied");
+    next();
+  };
+
+  app.use(morgan("dev"));
+  app.use(mOwnMiddelWare);
+
+  app.get("/", getPosts);
+
+  const port = 8080;
+
+  app.listen(port, () => {
+    console.log(`Node js Api is Listening on port: ${port}`);
+  });
+  ```
+  <b>In post.js</b>  
+   &nbsp; 
+   ```ruby
+   exports.getPosts = (req, res) => {
+      res.send("Hello World!!!");
+   };
+   ```
+- Now, you can check by running the terminal as,  
+  &nbsp;   
+  ```ruby
+  npm run dev
+  ```
+  
