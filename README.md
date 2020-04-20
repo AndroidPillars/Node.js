@@ -484,3 +484,27 @@ console.log("Total: ", total);
   ```
   
 # Seperating Routes
+
+<b>In app.js</b>  
+   &nbsp; 
+   ```ruby
+   const express = require("express");
+   const app = express();
+
+   const { getPosts } = require("./routes/post");
+
+   app.get("/", getPosts);
+
+   const port = 8080;
+
+   app.listen(port, () => {
+      console.log(`Node js Api is Listening on port: ${port}`);
+   });
+   ```
+ <b>In post.js</b>  
+   &nbsp; 
+   ```ruby
+   exports.getPosts = (req, res) => {
+      res.send("Hello World!!!");
+   };
+   ```
