@@ -564,3 +564,50 @@ console.log("Total: ", total);
   npm run dev
   ```
   
+# Using Controllers
+
+- Any post request we want to handle we will give the responsibility to the Controllers instead of handling everything inside   the routes.
+  <b>In app.js</b>  
+  &nbsp;  
+  ```ruby
+  const express = require("express");
+  const app = express();
+  const morgan = require("morgan");
+
+  const postRoutes = require("./routes/post");
+
+  app.use(morgan("dev"));
+
+  app.use("/", postRoutes);
+
+  const port = 8080;
+
+  app.listen(port, () => {
+    console.log(`Node js Api is Listening on port: ${port}`);
+  });
+  ```
+  <b>In controllers/post.js</b>  
+   &nbsp; 
+   ```ruby
+   exports.getPosts = (req, res) => {
+      res.send("Hello World!!!");
+   };
+   ```
+  <b>In routes/post.js</b>  
+   &nbsp; 
+   ```ruby
+   const express = require("express");
+   const postController = require("../controllers/post");
+
+   const router = express.Router();
+
+   router.get("/", postController.getPosts);
+
+   module.exports = router;
+   ```
+- Now, you can check by running the terminal as,  
+  &nbsp;   
+  ```ruby
+  npm run dev
+  ```
+  
