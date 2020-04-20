@@ -616,4 +616,33 @@ console.log("Total: ", total);
 - JSON stands for JavaScript Object Notation
 - It is a lightweight format for storing and transporting data
 - It is often used when data is sent from a server to a web page
+- Note: Install Json Viewer extension in google chrome for seeing the json Format in Structured way.
+
+<b>In controllers/post.js</b>  
+   &nbsp; 
+   ```ruby
+   exports.getPosts = (req, res) => {
+    res.json({
+      posts: [
+        { title: 'Android' },
+        { title: 'Flutter' }
+      ]
+    });
+    };
+   ```
+- Now, you can check by running the terminal as,  
+  &nbsp;   
+  ```ruby
+  npm run dev
+  ```
+   
+ # Postman
+ 
+ - Postman is an API(application programming interface) development tool which helps to build, test and modify APIs.
+ - Visit, https://www.postman.com/downloads/
+ - Read the documentation and install the app.
+ 
+ # Mongo db
+ 
+ - 
   
