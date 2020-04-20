@@ -610,4 +610,10 @@ console.log("Total: ", total);
   ```ruby
   npm run dev
   ```
+
+# JSON
+
+- JSON stands for JavaScript Object Notation
+- It is a lightweight format for storing and transporting data
+- It is often used when data is sent from a server to a web page
   
