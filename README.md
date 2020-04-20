@@ -524,7 +524,7 @@ console.log("Total: ", total);
   npm i morgan
   ```
 - We can see one of the example in Middleware using Morgan.
-- We can use the middleware using app.use() method.
+- We can use the middleware using app.use() method.  
   &nbsp;  
   <b>In app.js</b>  
   &nbsp;  
