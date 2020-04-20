@@ -566,7 +566,7 @@ console.log("Total: ", total);
   
 # Using Controllers
 
-- Any post request we want to handle we will give the responsibility to the Controllers instead of handling everything inside   the routes.
+- Any post request we want to handle we will give the responsibility to the Controllers instead of handling everything inside   the routes.  
   <b>In app.js</b>  
   &nbsp;  
   ```ruby
