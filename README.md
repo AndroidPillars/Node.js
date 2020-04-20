@@ -648,15 +648,21 @@ console.log("Total: ", total);
 - Instead of using tables and rows as in the traditional relational databases, MongoDB makes use of collections and documents. - Documents consist of key-value pairs which are the basic unit of data in MongoDB.
 - Visit, https://www.mongodb.com/ -> Read the documentation and create the account.
 - Visit, https://robomongo.org/ -> Robo 3T -> which gives you the visual representation of the database.
- 
-
-# Connecting to database using mongoose
-
+- To Access the enviroment variable files(i.e).env files
+  &nbsp;   
+  ```ruby
+  npm i dotenv
+  ```
 - To work with database there is a package called mongoose.
 - To install mongoose, In the Terminal  
    &nbsp;   
     ```ruby
     npm i mongoose
     ```
+ 
+
+# Connecting to database using mongoose
+
+
     
   
