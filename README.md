@@ -763,8 +763,22 @@ console.log("Total: ", total);
     ```ruby
     db.version()
     ```
-- To exit, click -> cntrl+c
-
+- To exit, click -> cntrl+c (or)issue the following line,
+  &nbsp;   
+    ```ruby
+    quit()
+    ```
+- Alternative way, To run MongoDB (i.e. the mongod process) as a macOS service, issue the following line,
+  &nbsp;   
+    ```ruby
+    brew services start mongodb-community@4.2
+    ```
+- To stop a mongod running as a macOS service, issue the following line,
+  &nbsp;   
+    ```ruby
+    brew services stop mongodb-community@4.2
+    ```
+    
 # Connecting to database using mongoose
 
 
