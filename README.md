@@ -951,7 +951,7 @@ console.log("Total: ", total);
   ```
 - body parser is used to read the request and make it in json Format.
 
-  <b>In app.js</b>  
+  <b>Now,In app.js</b>  
   ```ruby
   const express = require("express");
   const app = express();
