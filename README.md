@@ -21,9 +21,9 @@
 | 17 | [Functional Approach](README.md#functional-approach) |
 | 18 | [Thinks to get remember in Node js](README.md#thinks-to-get-remember-in-node-js) |
 | 19 | [Creating Server with express](README.md#creating-server-with-express) |
-| 1 | [Node.js](README.md#nodejs) |
-| 1 | [Node.js](README.md#nodejs) |
-| 1 | [Node.js](README.md#nodejs) |
+| 20 | [Seperating Routes](README.md#seperating-routes) |
+| 21 | [Middleware Explained](README.md#middleware-explained) |
+| 22 | [Using Controllers](README.md#using-controllers) |
 | 1 | [Node.js](README.md#nodejs) |
 | 1 | [Node.js](README.md#nodejs) |
 | 1 | [Node.js](README.md#nodejs) |
@@ -518,7 +518,6 @@ console.log("Total: ", total);
 # Seperating Routes
 
 <b>In app.js</b>  
-   &nbsp; 
    ```ruby
    const express = require("express");
    const app = express();
@@ -534,7 +533,6 @@ console.log("Total: ", total);
    });
    ```
 <b>In routes/post.js</b>  
-   &nbsp; 
    ```ruby
    exports.getPosts = (req, res) => {
       res.send("Hello World!!!");
@@ -599,6 +597,7 @@ console.log("Total: ", total);
 # Using Controllers
 
 - Any post request we want to handle we will give the responsibility to the Controllers instead of handling everything inside   the routes.  
+  &nbsp;  
   <b>In app.js</b>  
   &nbsp;  
   ```ruby
@@ -651,7 +650,6 @@ console.log("Total: ", total);
 - Note: Install Json Viewer extension in google chrome for seeing the json Format in Structured way.
 
 <b>In controllers/post.js</b>  
-   &nbsp; 
    ```ruby
    exports.getPosts = (req, res) => {
     res.json({
