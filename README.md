@@ -738,8 +738,32 @@ console.log("Total: ", total);
     ```ruby
     brew --version
     ```
- 
-
+- Tap the MongoDB Homebrew Tap and issue the following line,
+  &nbsp;   
+    ```ruby
+    brew tap mongodb/brew
+    ```
+- To install MongoDB Community Edition using the third-party brew package manager, issue the following line,
+  &nbsp;   
+    ```ruby
+    brew install mongodb-community@4.2
+    ```
+- To run MongoDB (i.e. the mongod process) manually as a background process, issue the following line,
+  &nbsp;   
+    ```ruby
+    mongod --config /usr/local/etc/mongod.conf --fork
+    ```
+- Now Go to file -> shell -> New Tab and issue the following line,
+  &nbsp;   
+    ```ruby
+    mongo
+    ```
+- To check the version,
+ &nbsp;   
+    ```ruby
+    db.version()
+    ```
+- To exit, click -> cntrl+c
 
 # Connecting to database using mongoose
 
