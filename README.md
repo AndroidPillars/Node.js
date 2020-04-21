@@ -15,11 +15,11 @@
 | 11 | [Node Js Core Modules](README.md#node-js-core-modules) |
 | 12 | [npm](README.md#npm) |
 | 13 | [Express](README.md#express) |
-| 1 | [Node.js](README.md#nodejs) |
-| 1 | [Node.js](README.md#nodejs) |
-| 1 | [Node.js](README.md#nodejs) |
-| 1 | [Node.js](README.md#nodejs) |
-| 1 | [Node.js](README.md#nodejs) |
+| 14 | [Node js Event Loop](README.md#node-js-event-loop) |
+| 15 | [Node js Asynchronous Programming](README.md#node-js-asynchronous-programming) |
+| 16 | [Node js Synchronous Programming](README.md#node-js-synchronous-programming) |
+| 17 | [Functional Approach](README.md#functional-approach) |
+| 18 | [Thinks to get remember in Node js](README.md#thinks-to-get-remember-in-node-js) |
 | 1 | [Node.js](README.md#nodejs) |
 
 
@@ -396,7 +396,7 @@ console.log("Total: ", total);
 # Node js Synchronous Programming
 
 - In Node js there is certain method available for doing Synchronous.
-- They will be executed one by one but it will wait till certain task to get complete.
+- They will be executed one by one but it will wait till certain task to get complete.  
    &nbsp;   
   <b>In app.js</b>  
    &nbsp;   
@@ -422,7 +422,7 @@ console.log("Total: ", total);
     
 # Functional Approach
 
-- Distribute the responsibilities to different functions.
+- Distribute the responsibilities to different functions.  
   &nbsp;   
   <b>In app.js</b>  
    &nbsp;   
