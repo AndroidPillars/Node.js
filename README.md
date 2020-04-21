@@ -991,4 +991,4 @@ console.log("Total: ", total);
     }
   }
   ```
-- You can check there at the mongoDB.Atlas in collections
+- You can also, check there at the mongoDB.Atlas in collections
