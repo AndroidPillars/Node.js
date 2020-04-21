@@ -3,6 +3,16 @@
 | S.No | Content |
 | --------	 | ------------ |
 | 1 | [Node.js](README.md#nodejs) |
+| 2 | [Features](README.md#features) |
+| 3 | [Installation](README.md#installation) |
+| 4 | [JavaScript in Browser Environment](README.md#javascript-in-browser-environment) |
+| 5 | [JavaScript in Node.js Environment](README.md#javascript-in-nodejs-environment) |
+| 6 | [Getting started with Node.Js](README.md#getting-started-with-nodejs) |
+| 7 | [Functions](README.md#functions) |
+| 8 | [Node.js](README.md#nodejs) |
+| 1 | [Node.js](README.md#nodejs) |
+| 1 | [Node.js](README.md#nodejs) |
+| 1 | [Node.js](README.md#nodejs) |
 
 
 
@@ -80,7 +90,8 @@
   ```ruby
   global
   ```
-  - Which lists the properties
+  - Which lists the properties  
+  &nbsp;  
 - To <b>Exit</b>,  
   &nbsp;  
   ```ruby
