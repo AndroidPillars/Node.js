@@ -661,6 +661,72 @@ console.log("Total: ", total);
     ```ruby
     npm i mongoose
     ```
+  <b>In app.js</b>  
+  &nbsp;  
+  ```ruby
+  const express = require("express");
+  const app = express();
+  const mongoose = require("mongoose");
+  const morgan = require("morgan");
+  const dotenv = require("dotenv");
+  dotenv.config();
+
+  mongoose.connect(process.env.MONGO_URI, 
+    { useNewUrlParser: true })
+  .then(() => console.log('DB Connected'))
+
+  mongoose.connection.on('error', err => {
+    console.log(`DB connection error: ${err.message}`)
+  })
+
+  const postRoutes = require("./routes/post");
+
+  app.use(morgan("dev"));
+
+  app.use("/", postRoutes);
+
+  const port = process.env.PORT || 8080;
+
+  app.listen(port, () => {
+    console.log(`Node js Api is Listening on port: ${port}`);
+  });
+  ```
+  <b>In controllers/post.js</b>  
+   &nbsp; 
+   ```ruby
+   exports.getPosts = (req, res) => {
+    res.json({
+      posts: [
+        { title: 'Android' },
+        { title: 'Flutter' }
+      ]
+    });
+    };
+   ```
+  <b>In routes/post.js</b>  
+   &nbsp; 
+  ```ruby
+  const express = require("express");
+  const postController = require("../controllers/post");
+
+  const router = express.Router();
+
+  router.get("/", postController.getPosts);
+
+  module.exports = router;
+  ```
+  <b>In .env</b>  
+   &nbsp; 
+  ```ruby
+  MONGO_URI=mongodb+srv://name:password@cluster0-ou1fj.mongodb.net/test?retryWrites=true&w=majority
+  PORT=8080
+  ```
+- Now, you can check by running the terminal as,  
+  &nbsp;   
+  ```ruby
+  npm run dev
+  ```
+
  
 # How to Install MongoDB on Mac
 
