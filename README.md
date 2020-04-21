@@ -973,3 +973,22 @@ console.log("Total: ", total);
     });
   };
   ```
+- Now, using the postman tool
+  ```ruby
+  {
+	"title": "This is a new post",
+	"body": "This is a body"
+  }
+  ```
+- Finally, you will get the response,
+  ```ruby
+  {
+    "post": {
+        "_id": "5e9ec822261fc802a701938b",
+        "title": "This is a new post",
+        "body": "This is a body",
+        "__v": 0
+    }
+  }
+  ```
+- You can check there at the mongoDB.Atlas in collections
