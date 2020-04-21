@@ -1009,15 +1009,13 @@ console.log("Total: ", total);
   };
   ```
 - Now, using the postman tool  
-  &nbsp;   
   ```ruby
   {
 	"title": "This is a new post",
 	"body": "This is a body"
   }
   ```
-- Finally, you will get the response,  
-  &nbsp;   
+- Finally, you will get the response,   
   ```ruby
   {
     "post": {
