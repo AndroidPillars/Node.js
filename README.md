@@ -915,3 +915,61 @@ console.log("Total: ", total);
   npm i body-parser
   ```
 - body parser is used to read the request and make it in json Format.
+
+  <b>In app.js</b>  
+  ```ruby
+  const express = require("express");
+  const app = express();
+  const mongoose = require("mongoose");
+  const morgan = require("morgan");
+  const dotenv = require("dotenv");
+  const bodyParser = require("body-parser");
+  dotenv.config();
+
+  // MONGO_URI=mongodb://localhost/node-api 
+  mongoose.connect(process.env.MONGO_URI, 
+    { useNewUrlParser: true })
+  .then(() => console.log('DB Connected'))
+
+  mongoose.connection.on('error', err => {
+    console.log(`DB connection error: ${err.message}`)
+  })
+
+  const postRoutes = require("./routes/post");
+
+  app.use(morgan("dev"));
+  app.use(bodyParser.json());
+  app.use("/", postRoutes);
+
+  const port = process.env.PORT || 8080;
+
+  app.listen(port, () => {
+    console.log(`Node js Api is Listening on port: ${port}`);
+  });
+  ```
+ <b>In controllers/post.js</b>  
+  ```ruby
+   const Post = require("../models/post");
+
+   exports.getPosts = (req, res) => {
+   res.json({
+      posts: [{ title: "Android" }, { title: "Flutter" }]
+   });
+  };
+
+  exports.createPost = (req, res) => {
+    const post = new Post(req.body);
+    // console.log("Creating POST:", req.body);
+    post.save((err, result) => {
+      if (err) {
+        return res.status(400).json({
+          error: err
+        });
+      }
+
+      res.status(200).json({
+        post: result
+      });
+    });
+  };
+  ```
