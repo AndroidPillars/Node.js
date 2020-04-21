@@ -906,7 +906,7 @@ console.log("Total: ", total);
   ```ruby
   npm run dev
   ```
-- Now, you will get an unique ID due to using Mongo db.
+- Now, at the terminal you will get an unique ID due to using Mongo db.
   ```ruby
   Creating POST: { _id: 5e9ec3b43e606f0273b87b6f }
   ```
