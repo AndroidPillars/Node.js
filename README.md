@@ -778,3 +778,30 @@ console.log("Total: ", total);
     ```ruby
     brew services stop mongodb-community@4.2
     ```
+    
+# Post Schema
+
+- By Now, we have created routes, controllers and finally, we need to create the models.
+- models is mainly help us to communicate with the database.
+  <b>In models/post.js</b>  
+   &nbsp; 
+   ```ruby
+   const mongoose = require("mongoose");
+
+   const postSchema = new mongoose.Schema({
+     title: {
+       type: String,
+       required: "Title is required",
+       minlength: 4,
+       maxlength: 150
+     },
+     body: {
+       type: String,
+       required: "Body is required",
+       minlength: 4,
+       maxlength: 2000
+     }
+   });
+
+   module.exports = mongoose.model("Post", postSchema);
+   ```
