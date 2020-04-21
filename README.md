@@ -11,6 +11,14 @@
 | 7 | [Functions](README.md#functions) |
 | 8 | [Import/Export](README.md#importexport) |
 | 9 | [Arrow Function](README.md#arrow-function) |
+| 10 | [Object Destructuring](README.md#object-destructuring) |
+| 11 | [Node Js Core Modules](README.md#node-js-core-modules) |
+| 12 | [npm](README.md#npm) |
+| 13 | [Express](README.md#express) |
+| 1 | [Node.js](README.md#nodejs) |
+| 1 | [Node.js](README.md#nodejs) |
+| 1 | [Node.js](README.md#nodejs) |
+| 1 | [Node.js](README.md#nodejs) |
 | 1 | [Node.js](README.md#nodejs) |
 | 1 | [Node.js](README.md#nodejs) |
 
@@ -213,8 +221,7 @@
 
 # Object Destructuring
 
-<b>In app.js</b>  
-&nbsp;  
+<b>In app.js</b>   
 ```ruby
 const helpers = require("./helpers");
 
@@ -231,8 +238,7 @@ console.log("Total: ", total);
 
 # Node Js Core Modules
 
-<b>In app.js</b>  
-&nbsp;   
+<b>In app.js</b>   
 ```ruby
 const { sum } = require("./helpers");
 const http = require('http')
