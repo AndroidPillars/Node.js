@@ -916,8 +916,8 @@ console.log("Total: ", total);
   ```
 - body parser is used to read the request and make it in json Format.
 
-  <b>In app.js</b>  
-  ```ruby
+<b>In app.js</b>  
+ ```ruby
   const express = require("express");
   const app = express();
   const mongoose = require("mongoose");
@@ -946,7 +946,7 @@ console.log("Total: ", total);
   app.listen(port, () => {
     console.log(`Node js Api is Listening on port: ${port}`);
   });
-  ```
+ ```
  <b>In controllers/post.js</b>  
   ```ruby
    const Post = require("../models/post");
