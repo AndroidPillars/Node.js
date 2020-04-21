@@ -647,6 +647,8 @@ console.log("Total: ", total);
 - MongoDB is a document-oriented NoSQL database used for high volume data storage. 
 - Instead of using tables and rows as in the traditional relational databases, MongoDB makes use of collections and documents. - Documents consist of key-value pairs which are the basic unit of data in MongoDB.
 - Visit, https://www.mongodb.com/ -> Read the documentation and create the account.
+- Create the New Cluster, Database Access and Network Access.
+- Clutser -> connect -> connect your application and copy the connection String.
 - Visit, https://robomongo.org/ -> Robo 3T -> which gives you the visual representation of the database.
 - To Access the enviroment variable files(i.e).env files
   &nbsp;   
@@ -660,6 +662,18 @@ console.log("Total: ", total);
     npm i mongoose
     ```
  
+# How to Install MongoDB on Mac
+
+- Visit, https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+- Follow the Documentation
+- Visit, https://brew.sh/#install -> Install Homebrew using the command Line
+- To check the version, In the Terminal  
+   &nbsp;   
+    ```ruby
+    brew --version
+    ```
+ 
+
 
 # Connecting to database using mongoose
 
