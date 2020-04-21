@@ -27,11 +27,9 @@
 | 23 | [JSON](README.md#json) |
 | 24 | [Postman](README.md#postman) |
 | 25 | [Mongo db](README.md#mongo-db) |
-| 1 | [Node.js](README.md#nodejs) |
-| 1 | [Node.js](README.md#nodejs) |
-
-
-
+| 26 | [How to Install MongoDB on Mac](README.md#how-to-install-mongodb-on-mac) |
+| 27 | [Post Schema](README.md#post-schema) |
+| 28 | [Creating a post](README.md#creating-a-post) |
 
 # Node.js
 
@@ -771,42 +769,42 @@ console.log("Total: ", total);
     ```ruby
     brew --version
     ```
-- Tap the MongoDB Homebrew Tap and issue the following line,
+- Tap the MongoDB Homebrew Tap and issue the following line,  
   &nbsp;   
     ```ruby
     brew tap mongodb/brew
     ```
-- To install MongoDB Community Edition using the third-party brew package manager, issue the following line,
+- To install MongoDB Community Edition using the third-party brew package manager, issue the following line,  
   &nbsp;   
     ```ruby
     brew install mongodb-community@4.2
     ```
-- To run MongoDB (i.e. the mongod process) manually as a background process, issue the following line,
+- To run MongoDB (i.e. the mongod process) manually as a background process, issue the following line,  
   &nbsp;   
     ```ruby
     mongod --config /usr/local/etc/mongod.conf --fork
     ```
-- Now Go to file -> shell -> New Tab and issue the following line,
+- Now Go to file -> shell -> New Tab and issue the following line,  
   &nbsp;   
     ```ruby
     mongo
     ```
-- To check the version,
+- To check the version,  
  &nbsp;   
     ```ruby
     db.version()
     ```
-- To exit, click -> cntrl+c (or)issue the following line,
+- To exit, click -> cntrl+c (or)issue the following line,  
   &nbsp;   
     ```ruby
     quit()
     ```
-- Alternative way, To run MongoDB (i.e. the mongod process) as a macOS service, issue the following line,
+- Alternative way, To run MongoDB (i.e. the mongod process) as a macOS service, issue the following line,  
   &nbsp;   
     ```ruby
     brew services start mongodb-community@4.2
     ```
-- To stop a mongod running as a macOS service, issue the following line,
+- To stop a mongod running as a macOS service, issue the following line,  
   &nbsp;   
     ```ruby
     brew services stop mongodb-community@4.2
@@ -928,22 +926,26 @@ console.log("Total: ", total);
   MONGO_URI=mongodb+srv://name:password@cluster0-ou1fj.mongodb.net/test?retryWrites=true&w=majority
   PORT=8080
   ```
-- Now, using the postman tool
+- Now, using the postman tool  
+  &nbsp;   
   ```ruby
   {
 	"title": "This is a new post",
 	"body": "This is a body"
   }
   ```
-- Now, you can check by running the terminal as,    
+- Now, you can check by running the terminal as,  
+  &nbsp;   
   ```ruby
   npm run dev
   ```
-- Now, at the terminal you will get an unique ID due to using Mongo db.
+- Now, at the terminal you will get an unique ID due to using Mongo db.  
+  &nbsp;   
   ```ruby
   Creating POST: { _id: 5e9ec3b43e606f0273b87b6f }
   ```
-- Now, We are going to install body parser by using the command line,
+- Now, We are going to install body parser by using the command line,  
+  &nbsp;   
   ```ruby
   npm i body-parser
   ```
