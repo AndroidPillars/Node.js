@@ -782,7 +782,7 @@ console.log("Total: ", total);
 # Post Schema
 
 - By Now, we have created routes, controllers and finally, we need to create the models.
-- models is mainly help us to communicate with the database.
+- models is mainly help us to communicate with the database.  
   <b>In models/post.js</b>  
    &nbsp; 
    ```ruby
