@@ -625,7 +625,7 @@ console.log("Total: ", total);
    };
    ```
   <b>In routes/post.js</b>  
-   &nbsp; 
+   &nbsp;  
    ```ruby
    const express = require("express");
    const postController = require("../controllers/post");
@@ -648,7 +648,7 @@ console.log("Total: ", total);
 - It is a lightweight format for storing and transporting data
 - It is often used when data is sent from a server to a web page
 - Note: Install Json Viewer extension in google chrome for seeing the json Format in Structured way.
-
+  &nbsp;  
   <b>In controllers/post.js</b>  
   ```ruby
    exports.getPosts = (req, res) => {
