@@ -778,9 +778,3 @@ console.log("Total: ", total);
     ```ruby
     brew services stop mongodb-community@4.2
     ```
-    
-# Connecting to database using mongoose
-
-
-    
-  
