@@ -910,3 +910,8 @@ console.log("Total: ", total);
   ```ruby
   Creating POST: { _id: 5e9ec3b43e606f0273b87b6f }
   ```
+- Now, We are going to install body parser by using the command line,
+  ```ruby
+  npm i body-parser
+  ```
+- body parser is used to read the request and make it in json Format.
