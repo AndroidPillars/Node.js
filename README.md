@@ -808,7 +808,7 @@ console.log("Total: ", total);
    ```
    
 # Creating a post
-  
+  &nbsp; 
   <b>In app.js</b>  
   &nbsp;  
   ```ruby
@@ -840,6 +840,7 @@ console.log("Total: ", total);
     console.log(`Node js Api is Listening on port: ${port}`);
   });
   ```
+  &nbsp; 
   <b>In controllers/post.js</b>  
    &nbsp; 
    ```ruby
@@ -859,6 +860,7 @@ console.log("Total: ", total);
     console.log("Creating POST:", post);
   }
    ```
+   &nbsp; 
   <b>In models/post.js</b>  
    &nbsp; 
   ```ruby
@@ -881,6 +883,7 @@ console.log("Total: ", total);
 
   module.exports = mongoose.model("Post", postSchema);
   ```
+   &nbsp; 
   <b>In routes/post.js</b>  
    &nbsp; 
   ```ruby
@@ -894,6 +897,7 @@ console.log("Total: ", total);
 
   module.exports = router;
   ```
+   &nbsp; 
   <b>In .env</b>  
    &nbsp; 
   ```ruby
