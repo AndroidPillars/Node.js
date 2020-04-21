@@ -9,8 +9,8 @@
 | 5 | [JavaScript in Node.js Environment](README.md#javascript-in-nodejs-environment) |
 | 6 | [Getting started with Node.Js](README.md#getting-started-with-nodejs) |
 | 7 | [Functions](README.md#functions) |
-| 8 | [Node.js](README.md#nodejs) |
-| 1 | [Node.js](README.md#nodejs) |
+| 8 | [Import/Export](README.md#importexport) |
+| 9 | [Arrow Function](README.md#arrow-function) |
 | 1 | [Node.js](README.md#nodejs) |
 | 1 | [Node.js](README.md#nodejs) |
 
@@ -168,14 +168,15 @@
 
   const total = helpers.sum(4, 5);
   console.log("Total: ", total);
-  ```
+  ```  
+  &nbsp;  
 - where <b>require</b>, is used to load own module or core node js modules as well as third party modules. 
 
 # Arrow Function
 
 - It is short, easy to understand and use.
-- Compare to Normal functions, Arrow functions don't have their context(i.e)this keyword.
-
+- Compare to Normal functions, Arrow functions don't have their context(i.e)this keyword.  
+  &nbsp;  
   <b>In helpers.js</b>  
   &nbsp;  
   ```ruby
