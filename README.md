@@ -810,7 +810,6 @@ console.log("Total: ", total);
 # Creating a post
   &nbsp; 
   <b>In app.js</b>  
-  &nbsp;  
   ```ruby
   const express = require("express");
   const app = express();
@@ -839,10 +838,8 @@ console.log("Total: ", total);
   app.listen(port, () => {
     console.log(`Node js Api is Listening on port: ${port}`);
   });
-  ```
-  &nbsp; 
+  ```  
   <b>In controllers/post.js</b>  
-   &nbsp; 
    ```ruby
    const Post = require('../models/post')
 
@@ -859,10 +856,8 @@ console.log("Total: ", total);
     const post = new Post(req.body)
     console.log("Creating POST:", post);
   }
-   ```
-   &nbsp; 
-  <b>In models/post.js</b>  
-   &nbsp; 
+   ```  
+  <b>In models/post.js</b>   
   ```ruby
   const mongoose = require("mongoose");
 
@@ -883,9 +878,7 @@ console.log("Total: ", total);
 
   module.exports = mongoose.model("Post", postSchema);
   ```  
-   &nbsp; 
-  <b>In routes/post.js</b>  
-   &nbsp; 
+  <b>In routes/post.js</b>   
   ```ruby
   const express = require("express");
   const postController = require("../controllers/post");
