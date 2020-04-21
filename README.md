@@ -24,7 +24,7 @@
 | 20 | [Seperating Routes](README.md#seperating-routes) |
 | 21 | [Middleware Explained](README.md#middleware-explained) |
 | 22 | [Using Controllers](README.md#using-controllers) |
-| 1 | [Node.js](README.md#nodejs) |
+| 23 | [JSON](README.md#json) |
 | 1 | [Node.js](README.md#nodejs) |
 | 1 | [Node.js](README.md#nodejs) |
 
@@ -649,8 +649,8 @@ console.log("Total: ", total);
 - It is often used when data is sent from a server to a web page
 - Note: Install Json Viewer extension in google chrome for seeing the json Format in Structured way.
 
-<b>In controllers/post.js</b>  
-   ```ruby
+  <b>In controllers/post.js</b>  
+  ```ruby
    exports.getPosts = (req, res) => {
     res.json({
       posts: [
@@ -659,7 +659,7 @@ console.log("Total: ", total);
       ]
     });
     };
-   ```
+   ```  
 - Now, you can check by running the terminal as,  
   &nbsp;   
   ```ruby
