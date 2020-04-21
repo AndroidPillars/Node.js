@@ -25,6 +25,8 @@
 | 21 | [Middleware Explained](README.md#middleware-explained) |
 | 22 | [Using Controllers](README.md#using-controllers) |
 | 23 | [JSON](README.md#json) |
+| 24 | [Postman](README.md#postman) |
+| 25 | [Mongo db](README.md#mongo-db) |
 | 1 | [Node.js](README.md#nodejs) |
 | 1 | [Node.js](README.md#nodejs) |
 
@@ -647,9 +649,10 @@ console.log("Total: ", total);
 - JSON stands for JavaScript Object Notation
 - It is a lightweight format for storing and transporting data
 - It is often used when data is sent from a server to a web page
-- Note: Install Json Viewer extension in google chrome for seeing the json Format in Structured way.
+- Note: Install Json Viewer extension in google chrome for seeing the json Format in Structured way.  
   &nbsp;  
   <b>In controllers/post.js</b>  
+  &nbsp;  
   ```ruby
    exports.getPosts = (req, res) => {
     res.json({
@@ -680,7 +683,7 @@ console.log("Total: ", total);
 - Create the New Cluster, Database Access and Network Access.
 - Clutser -> connect -> connect your application and copy the connection String.
 - Visit, https://robomongo.org/ -> Robo 3T -> which gives you the visual representation of the database.
-- To Access the enviroment variable files(i.e).env files
+- To Access the enviroment variable files(i.e).env files  
   &nbsp;   
   ```ruby
   npm i dotenv
