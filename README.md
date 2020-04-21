@@ -882,7 +882,7 @@ console.log("Total: ", total);
   });
 
   module.exports = mongoose.model("Post", postSchema);
-  ```
+  ```  
    &nbsp; 
   <b>In routes/post.js</b>  
    &nbsp; 
@@ -896,16 +896,13 @@ console.log("Total: ", total);
   router.post("/post", postController.createPost);
 
   module.exports = router;
-  ```
-   &nbsp; 
+  ```  
   <b>In .env</b>  
-   &nbsp; 
   ```ruby
   MONGO_URI=mongodb+srv://name:password@cluster0-ou1fj.mongodb.net/test?retryWrites=true&w=majority
   PORT=8080
   ```
-- Now, you can check by running the terminal as,  
-  &nbsp;   
+- Now, you can check by running the terminal as,    
   ```ruby
   npm run dev
   ```
