@@ -895,7 +895,18 @@ console.log("Total: ", total);
   MONGO_URI=mongodb+srv://name:password@cluster0-ou1fj.mongodb.net/test?retryWrites=true&w=majority
   PORT=8080
   ```
+- Now, using the postman tool
+  ```ruby
+  {
+	"title": "This is a new post",
+	"body": "This is a body"
+  }
+  ```
 - Now, you can check by running the terminal as,    
   ```ruby
   npm run dev
+  ```
+- Now, you will get an unique ID due to using Mongo db.
+  ```ruby
+  Creating POST: { _id: 5e9ec3b43e606f0273b87b6f }
   ```
