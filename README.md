@@ -501,7 +501,7 @@ console.log("Total: ", total);
       console.log(`Node js Api is Listening on port: ${port}`);
    });
    ```
-<b>In post.js</b>  
+<b>In routes/post.js</b>  
    &nbsp; 
    ```ruby
    exports.getPosts = (req, res) => {
@@ -551,7 +551,7 @@ console.log("Total: ", total);
     console.log(`Node js Api is Listening on port: ${port}`);
   });
   ```
-  <b>In post.js</b>  
+  <b>In routes/post.js</b>  
    &nbsp; 
    ```ruby
    exports.getPosts = (req, res) => {
