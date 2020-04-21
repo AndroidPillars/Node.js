@@ -783,8 +783,9 @@ console.log("Total: ", total);
 
 - By Now, we have created routes, controllers and finally, we need to create the models.
 - models is mainly help us to communicate with the database.  
+  &nbsp;  
   <b>In models/post.js</b>  
-   &nbsp; 
+   &nbsp;  
    ```ruby
    const mongoose = require("mongoose");
 
@@ -805,3 +806,102 @@ console.log("Total: ", total);
 
    module.exports = mongoose.model("Post", postSchema);
    ```
+   
+# Creating a post
+  
+  <b>In app.js</b>  
+  &nbsp;  
+  ```ruby
+  const express = require("express");
+  const app = express();
+  const mongoose = require("mongoose");
+  const morgan = require("morgan");
+  const dotenv = require("dotenv");
+  dotenv.config();
+
+  // MONGO_URI=mongodb://localhost/node-api 
+  mongoose.connect(process.env.MONGO_URI, 
+    { useNewUrlParser: true })
+  .then(() => console.log('DB Connected'))
+
+  mongoose.connection.on('error', err => {
+    console.log(`DB connection error: ${err.message}`)
+  })
+
+  const postRoutes = require("./routes/post");
+
+  app.use(morgan("dev"));
+
+  app.use("/", postRoutes);
+
+  const port = process.env.PORT || 8080;
+
+  app.listen(port, () => {
+    console.log(`Node js Api is Listening on port: ${port}`);
+  });
+  ```
+  <b>In controllers/post.js</b>  
+   &nbsp; 
+   ```ruby
+   const Post = require('../models/post')
+
+  exports.getPosts = (req, res) => {
+    res.json({
+      posts: [
+        { title: 'Android' },
+        { title: 'Flutter' }
+      ]
+    });
+  };
+
+  exports.createPost = (req, res) => {
+    const post = new Post(req.body)
+    console.log("Creating POST:", post);
+  }
+   ```
+  <b>In models/post.js</b>  
+   &nbsp; 
+  ```ruby
+  const mongoose = require("mongoose");
+
+  const postSchema = new mongoose.Schema({
+    title: {
+      type: String,
+      required: "Title is required",
+      minlength: 4,
+      maxlength: 150
+    },
+    body: {
+      type: String,
+      required: "Body is required",
+      minlength: 4,
+      maxlength: 2000
+    }
+  });
+
+  module.exports = mongoose.model("Post", postSchema);
+  ```
+  <b>In routes/post.js</b>  
+   &nbsp; 
+  ```ruby
+  const express = require("express");
+  const postController = require("../controllers/post");
+
+  const router = express.Router();
+
+  router.get("/", postController.getPosts);
+  router.post("/post", postController.createPost);
+
+  module.exports = router;
+  ```
+  <b>In .env</b>  
+   &nbsp; 
+  ```ruby
+  MONGO_URI=mongodb+srv://name:password@cluster0-ou1fj.mongodb.net/test?retryWrites=true&w=majority
+  PORT=8080
+  ```
+- Now, you can check by running the terminal as,  
+  &nbsp;   
+  ```ruby
+  npm run dev
+  ```
