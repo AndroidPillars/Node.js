@@ -1180,6 +1180,7 @@ console.log("Total: ", total);
 # Getting Post
 
 - We are getting all the datas from the database and display it to the users.  
+  &nbsp;   
   <b>In controllers/post.js</b>   
   &nbsp;   
   ```ruby
@@ -1202,7 +1203,11 @@ console.log("Total: ", total);
     });
   };
   ```
+  
+# Code Refractor:
+
 - We can do code Optimization of the above code as mentioned below,  
+  &nbsp;   
   <b>In controllers/post.js</b>   
   &nbsp;   
   ```ruby
@@ -1225,4 +1230,18 @@ console.log("Total: ", total);
       });
     });
   };
+  ```
+  <b>In routes/post.js</b>  
+  &nbsp;   
+  ```ruby
+  const express = require("express");
+  const { getPosts, createPost} = require("../controllers/post");
+  const validator = require('../validators/index')
+
+  const router = express.Router();
+
+  router.get("/", getPosts);
+  router.post("/post", validator.createPostValidator, createPost);
+
+  module.exports = router;
   ```
