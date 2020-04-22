@@ -30,6 +30,7 @@
 | 26 | [How to Install MongoDB on Mac](README.md#how-to-install-mongodb-on-mac) |
 | 27 | [Post Schema](README.md#post-schema) |
 | 28 | [Creating a post](README.md#creating-a-post) |
+| 29 | [Validation and Error Messages](README.md#validation-and-error-messages) |
 
 # Node.js
 
@@ -1032,10 +1033,11 @@ console.log("Total: ", total);
 
 - For Handling Errors, we will use the package nanmed express-validator.
   ```ruby
-   npm i express-validator@5.3.1
+  npm i express-validator@5.3.1
   ```
 - While using version 6, you will encounter the following error(i.e) TypeError: expressValidator is not a function.
-- To avoid this issue you can use the previous version which is 5.3.1
+- To avoid this issue you can use the previous version which is 5.3.1  
+  &nbsp;   
   <b>Now, In app.js</b>  
   ```ruby
   const express = require("express");
@@ -1089,6 +1091,7 @@ console.log("Total: ", total);
   };
   ```
   <b>In models/post.js</b>  
+  &nbsp;   
   ```ruby
   const mongoose = require("mongoose");
 
@@ -1106,6 +1109,7 @@ console.log("Total: ", total);
   module.exports = mongoose.model("Post", postSchema);
   ```
   <b>In routes/post.js</b>  
+  &nbsp;   
   ```ruby
   const express = require("express");
   const postController = require("../controllers/post");
@@ -1147,26 +1151,24 @@ console.log("Total: ", total);
   }
   ```
   <b>In .env</b>  
+  &nbsp;   
   ```ruby
   MONGO_URI=mongodb+srv://name:password@cluster0-ou1fj.mongodb.net/test?retryWrites=true&w=majority
   PORT=8080
   ```
 - Now, using the postman tool  
+  &nbsp;   
   ```ruby
   {
-	"title": "This is a new post",
+	"title": "Thi",
 	"body": "This is a body"
   }
   ```
 - Finally, you will get the response,   
+  &nbsp;   
   ```ruby
   {
-    "post": {
-        "_id": "5e9ec822261fc802a701938b",
-        "title": "This is a new post",
-        "body": "This is a body",
-        "__v": 0
-    }
+    "error": "Title must be between 4 to 10 characters"
   }
   ```
 - You can also, check there at the mongoDB.Atlas in collections
