@@ -31,6 +31,7 @@
 | 27 | [Post Schema](README.md#post-schema) |
 | 28 | [Creating a post](README.md#creating-a-post) |
 | 29 | [Validation and Error Messages](README.md#validation-and-error-messages) |
+| 30 | [Getting Post](README.md#getting-post) |
 
 # Node.js
 
@@ -1178,7 +1179,7 @@ console.log("Total: ", total);
 
 # Getting Post
 
-- We are getting all the datas from the database and display it to the users.
+- We are getting all the datas from the database and display it to the users.  
   <b>In controllers/post.js</b>   
   &nbsp;   
   ```ruby
@@ -1201,7 +1202,7 @@ console.log("Total: ", total);
     });
   };
   ```
-- We can do code Optimization of the above code as mentioned below,
+- We can do code Optimization of the above code as mentioned below,  
   <b>In controllers/post.js</b>   
   &nbsp;   
   ```ruby
