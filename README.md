@@ -1039,6 +1039,7 @@ console.log("Total: ", total);
 - To avoid this issue you can use the previous version which is 5.3.1  
   &nbsp;   
   <b>Now, In app.js</b>  
+  &nbsp;   
   ```ruby
   const express = require("express");
   const app = express();
@@ -1071,7 +1072,8 @@ console.log("Total: ", total);
     console.log(`Node js Api is Listening on port: ${port}`);
   });
   ```
-  <b>In controllers/post.js</b>  
+  <b>In controllers/post.js</b>   
+  &nbsp;   
   ```ruby
   const Post = require("../models/post");
 
@@ -1123,6 +1125,7 @@ console.log("Total: ", total);
   module.exports = router;
   ```
   <b>In validators/index.js</b>  
+  &nbsp;   
   ```ruby
   exports.createPostValidator = (req, res, next) => {
     // title
