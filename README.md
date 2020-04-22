@@ -1027,3 +1027,146 @@ console.log("Total: ", total);
   }
   ```
 - You can also, check there at the mongoDB.Atlas in collections
+
+# Validation and Error Messages
+
+- For Handling Errors, we will use the package nanmed express-validator.
+  ```ruby
+   npm i express-validator@5.3.1
+  ```
+- While using version 6, you will encounter the following error(i.e) TypeError: expressValidator is not a function.
+- To avoid this issue you can use the previous version which is 5.3.1
+  <b>Now, In app.js</b>  
+  ```ruby
+  const express = require("express");
+  const app = express();
+  const mongoose = require("mongoose");
+  const morgan = require("morgan");
+  const dotenv = require("dotenv");
+  const expressValidator = require("express-validator");
+  const bodyParser = require("body-parser");
+  dotenv.config();
+
+  // MONGO_URI=mongodb://localhost/node-api 
+  mongoose.connect(process.env.MONGO_URI, 
+    { useNewUrlParser: true })
+  .then(() => console.log('DB Connected'))
+
+  mongoose.connection.on('error', err => {
+    console.log(`DB connection error: ${err.message}`)
+  })
+
+  const postRoutes = require("./routes/post");
+
+  app.use(morgan("dev"));
+  app.use(bodyParser.json());
+  app.use(expressValidator());
+  app.use("/", postRoutes);
+
+  const port = process.env.PORT || 8080;
+
+  app.listen(port, () => {
+    console.log(`Node js Api is Listening on port: ${port}`);
+  });
+  ```
+  <b>In controllers/post.js</b>  
+  ```ruby
+  const Post = require("../models/post");
+
+  exports.getPosts = (req, res) => {
+  res.json({
+      posts: [{ title: "Android" }, { title: "Flutter" }]
+    });
+  };
+
+  exports.createPost = (req, res) => {
+    const post = new Post(req.body);
+    post.save().then(result => {
+      res.status(200).json({
+        post: result
+      });
+    });
+  };
+  ```
+  <b>In models/post.js</b>  
+  ```ruby
+  const mongoose = require("mongoose");
+
+  const postSchema = new mongoose.Schema({
+    title: {
+      type: String,
+      required: true
+    },
+    body: {
+      type: String,
+      required: true
+    }
+  });
+
+  module.exports = mongoose.model("Post", postSchema);
+  ```
+  <b>In routes/post.js</b>  
+  ```ruby
+  const express = require("express");
+  const postController = require("../controllers/post");
+  const validator = require('../validators/index')
+
+  const router = express.Router();
+
+  router.get("/", postController.getPosts);
+  router.post("/post", validator.createPostValidator, postController.createPost);
+
+  module.exports = router;
+  ```
+  <b>In validators/index.js</b>  
+  ```ruby
+  exports.createPostValidator = (req, res, next) => {
+    // title
+    req.check('title', 'Write a title').notEmpty()
+    req.check('title', 'Title must be between 4 to 10 characters').isLength({
+        min: 4,
+        max: 150
+    });
+
+    // body
+    req.check('body', 'Write a body').notEmpty()
+    req.check('body', 'Body must be between 4 to 2000 characters').isLength({
+        min: 4,
+        max: 2000
+    });
+
+    // check for errors
+    const errors = req.validationErrors()
+    // if error occurs shows the first one as they happen
+    if (errors) {
+        const firstError = errors.map((error) => error.msg)[0]
+        return res.status(400).json({ error: firstError })
+    }
+    // proceed to next middleware
+    next();
+  }
+  ```
+  <b>In .env</b>  
+  ```ruby
+  MONGO_URI=mongodb+srv://name:password@cluster0-ou1fj.mongodb.net/test?retryWrites=true&w=majority
+  PORT=8080
+  ```
+- Now, using the postman tool  
+  ```ruby
+  {
+	"title": "This is a new post",
+	"body": "This is a body"
+  }
+  ```
+- Finally, you will get the response,   
+  ```ruby
+  {
+    "post": {
+        "_id": "5e9ec822261fc802a701938b",
+        "title": "This is a new post",
+        "body": "This is a body",
+        "__v": 0
+    }
+  }
+  ```
+- You can also, check there at the mongoDB.Atlas in collections
