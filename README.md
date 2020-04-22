@@ -32,7 +32,7 @@
 | 28 | [Creating a post](README.md#creating-a-post) |
 | 29 | [Validation and Error Messages](README.md#validation-and-error-messages) |
 | 30 | [Getting Post](README.md#getting-post) |
-
+| 31 | [Code Refractor](README.md#code-refractor) |
 # Node.js
 
 - Node.js is a platform it allows you to run a JavaScript code in a computer.
@@ -1204,7 +1204,7 @@ console.log("Total: ", total);
   };
   ```
   
-# Code Refractor:
+# Code Refractor
 
 - We can do code Optimization of the above code as mentioned below,  
   &nbsp;   
