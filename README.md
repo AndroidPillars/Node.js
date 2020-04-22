@@ -1175,3 +1175,53 @@ console.log("Total: ", total);
   }
   ```
 - You can also, check there at the mongoDB.Atlas in collections
+
+# Getting Post
+
+- We are getting all the datas from the database and display it to the users.
+  <b>In controllers/post.js</b>   
+  &nbsp;   
+  ```ruby
+  const Post = require("../models/post");
+
+  exports.getPosts = (req, res) => {
+    const posts = Post.find()
+    .then((posts) => {
+      res.status(200).json({posts: posts})
+    })
+    .catch(err => console.log(err))
+  };
+
+  exports.createPost = (req, res) => {
+    const post = new Post(req.body);
+    post.save().then(result => {
+      res.status(200).json({
+        post: result
+      });
+    });
+  };
+  ```
+- We can do code Optimization of the above code as mentioned below,
+  <b>In controllers/post.js</b>   
+  &nbsp;   
+  ```ruby
+  const Post = require("../models/post");
+
+  exports.getPosts = (req, res) => {
+    const posts = Post.find()
+    .select("_id title body")
+    .then((posts) => {
+      res.json({posts})
+    })
+    .catch(err => console.log(err))
+  };
+
+  exports.createPost = (req, res) => {
+    const post = new Post(req.body);
+    post.save().then(result => {
+      res.json({
+        post: result
+      });
+    });
+  };
+  ```
