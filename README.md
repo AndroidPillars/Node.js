@@ -33,6 +33,8 @@
 | 29 | [Validation and Error Messages](README.md#validation-and-error-messages) |
 | 30 | [Getting Post](README.md#getting-post) |
 | 31 | [Code Refractor](README.md#code-refractor) |
+| 32 | [Points to get Remember](README.md#points-to-get-remember) |
+
 # Node.js
 
 - Node.js is a platform it allows you to run a JavaScript code in a computer.
@@ -1248,7 +1250,7 @@ console.log("Total: ", total);
 
 # Points to get Remember
 
-- Whenever you are opening an existing Application you have to install the npm package using,  
+- Whenever you are opening an existing Application, you have to install the npm package using,  
   &nbsp;   
   ```ruby
   npm install
