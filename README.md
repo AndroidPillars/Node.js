@@ -1245,3 +1245,11 @@ console.log("Total: ", total);
 
   module.exports = router;
   ```
+
+# Points to get Remember
+
+- Whenever you are opening an existing Application you have to install the npm package using,  
+  &nbsp;   
+  ```ruby
+  npm install
+  ```
