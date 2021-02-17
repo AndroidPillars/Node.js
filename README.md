@@ -37,7 +37,9 @@
 
 # Node.js
 
-- Node.js is a platform it allows you to run a JavaScript code in a computer.
+- Node.js is an open source server environment.
+- It is not a programming language.
+- It is just a platform it allows you to run a JavaScript code in a computer on Server side.
 - Before Node the JavaScript Code that only run on through browser,  
   &nbsp;  
   ```ruby
