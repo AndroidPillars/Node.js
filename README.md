@@ -53,11 +53,13 @@
 
 - Using JavaScript.
 - Extremly Fast.
-- Utilize Google's V8 engine written in C++.
-- V8 compiles JavaScript code in to machine code for computer.
+- Node js is built on Google's V8 engine written in C++.
+- V8 compiles JavaScript code in to machine code faster.
 - Build Web, Mobile and Desktop Apps.
 - We are using npm(i.e)Node Package Manager which is the world's largest library for open sources packages.
 - Great for building Real Time Applications.
+- Single Threaded.
+- I/O Non Blocking and Asynchronous.
 
 # Installation
 
