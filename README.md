@@ -90,8 +90,8 @@
 
 # JavaScript in Browser Environment
 
- - In the Browser Environment window object is the top level wrapper object and the document object will come inside window   object.
-- In Browser -> Inspect -> console  
+- In the Browser Environment window object is the top level wrapper object and the document object will come inside window   object.
+- Go to the Browser -> Inspect -> console  
   &nbsp;  
   ```ruby
   window
