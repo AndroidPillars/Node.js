@@ -128,6 +128,7 @@
   ```ruby
   process.exit();
   ```
+  For shortcut press ctrl + c 
 
 # Getting started with Node.Js
 
