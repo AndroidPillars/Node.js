@@ -171,10 +171,10 @@
     ```
   - O/P -> Total: 9
 
-# Import/Export
+## Import/Export
 
 - Seperate the file which we are going to use as common.
-- Create helper.js -> which Export and Import that in -> app.js  
+- Now Create helper.js which we are going to seperate & Export and Import that in app.js  
   &nbsp;  
   ```ruby
   console.log("Process: ", process);
