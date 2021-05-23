@@ -65,7 +65,7 @@
 
 ## Installation
 
-- Visit, https://nodejs.org/en/
+- Install node by using https://nodejs.org/en/
 - Download the Recommended Version.
 - To check the current version  
   &nbsp;  
@@ -133,7 +133,7 @@
 ## Getting started with Node.Js
 
 - For Code Editor we will use Visual Studio Code.
-- Install -> Visual Studio Code using https://code.visualstudio.com/
+- Install Visual Studio Code by using https://code.visualstudio.com/
 - Create Folder in required drive.
 - Open that Folder through Visual Studio Code.
 - Create a file app.js 
