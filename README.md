@@ -130,15 +130,20 @@
   ```
   For shortcut press ctrl + c 
 
-# Getting started with Node.Js
+## Getting started with Node.Js
 
-- Install -> Visual Studio Code -> Create Folder in required drive -> Open that Folder through Visual Studio Code.
-- Create app.js -> print  
+- For Code Editor we will use Visual Studio Code.
+- Install -> Visual Studio Code using https://code.visualstudio.com/
+- Create Folder in required drive.
+- Open that Folder through Visual Studio Code.
+- Create a file app.js 
   &nbsp;  
   ```ruby
   console.log("Hello World"); 
   ```
-- Go to the App folder -> Enter cmd at the top bar -> In cmd prompt -> node app.js
+- Go to the App folder.
+- Enter cmd at the top bar.
+- In cmd prompt -> node app.js
 - O/P -> Hello World
 
 # Functions
