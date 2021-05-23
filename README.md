@@ -35,7 +35,7 @@
 | 31 | [Code Refractor](README.md#code-refractor) |
 | 32 | [Points to get Remember](README.md#points-to-get-remember) |
 
-# Node.js
+## Node.js
 
 - Node.js is an open source server environment.
 - It is not a programming language.
@@ -85,7 +85,7 @@
 
 - Node Js Modules to be same as JavaScript libraries.
 - Node Js has a set of built-in modules which you can use in your application with out any further installation.
-- We can easily create iur own modules and include in our application.
+- We can easily create our own modules and include in our application.
 - We can include the in-built modules or your own modules in our application then you can use the require() function with the name of the module.
 
 # JavaScript in Browser Environment
