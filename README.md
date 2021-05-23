@@ -88,7 +88,7 @@
 - We can easily create our own modules and include in our application.
 - We can include the in-built modules or your own modules in our application then you can use the require() function with the name of the module.
 
-# JavaScript in Browser Environment
+## JavaScript in Browser Environment
 
 - In the Browser Environment window object is the top level wrapper object and the document object will come inside window   object.
 - Go to the Browser -> Inspect -> console  
@@ -111,7 +111,7 @@
     ```
    - It changes the background color of the screen.
 
-# JavaScript in Node.js Environment
+## JavaScript in Node.js Environment
 
 - Similarly like <b>window</b> object in Node we are having <b>global</b> and process for document.  
  &nbsp;  
