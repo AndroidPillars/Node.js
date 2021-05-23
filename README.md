@@ -40,6 +40,7 @@
 - Node.js is an open source server environment.
 - It is not a programming language.
 - It is just a platform it allows you to run a JavaScript code in a computer on Server side.
+- Node.js has built-in libraries to handle web requests and responses so we don't need a seperate web server or other dependencies.
 - Before Node the JavaScript Code that only run on through browser,  
   &nbsp;  
   ```ruby
