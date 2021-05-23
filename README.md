@@ -61,6 +61,7 @@
 - Great for building Real Time Applications.
 - Single Threaded.
 - I/O Non Blocking and Asynchronous.
+- Note: Node.js doesn't support CPU intensive work it's only work on I/O intensive.(i.e.) Mathematical Calculation doesn't support in Node.js
 
 # Installation
 
