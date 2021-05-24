@@ -50,11 +50,10 @@
   console.log("Hello World")
   ```
 
-# Features
+## Features
 
 - Using JavaScript.
-- Extremly Fast.
-- Node js is built on Google's V8 engine written in C++.
+- Extremly Fast -> Node js is built on Google's V8 engine written in C++.
 - V8 compiles JavaScript code in to machine code faster.
 - Build Web, Mobile and Desktop Apps.
 - We are using npm(i.e)Node Package Manager which is the world's largest library for open sources packages.
