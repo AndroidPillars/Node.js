@@ -131,7 +131,7 @@
 
 ## Getting started with Node.Js
 
-- For Code Editor we will use Visual Studio Code.
+- For Code Editor we will use __Visual Studio Code.__
 - Install Visual Studio Code by using https://code.visualstudio.com/
 - Create Folder in required drive.
 - Open that Folder through Visual Studio Code.
