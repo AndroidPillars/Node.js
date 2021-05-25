@@ -245,7 +245,9 @@
   exports.sum = (a,b) => a+b;
   ```
 
-# Object Destructuring
+## Object Destructuring
+
+- Simplify our code.
 
 <b>In app.js</b>   
 ```ruby
