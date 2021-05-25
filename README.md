@@ -247,7 +247,7 @@
 
 ## Object Destructuring
 
-- Simplify our code.
+- Object Destructuring is Simplifying our code.
 
 <b>In app.js</b>   
 ```ruby
