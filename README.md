@@ -289,7 +289,10 @@ console.log("Total: ", total);
 - O/P -> Hello World
 - We created the Server using http module using node js.
 
-## Importing Own Files
+## Importing our Own Files
+
+- We need to import the module to use the functions defined in the imported module in another file. 
+- The result returned by require() is stored in a variable which is used to invoke the functions using the dot notation.
 
 <b>In app.js</b>   
 ```ruby
