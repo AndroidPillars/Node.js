@@ -71,8 +71,8 @@
   ```ruby
   node -v
   ```
-- <b>Example</b>,  
-  &nbsp;  
+- <b>Example</b>  
+  &nbsp;   
   ```ruby
   node
   ```
