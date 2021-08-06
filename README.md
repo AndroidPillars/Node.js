@@ -262,9 +262,22 @@ const { sum } = require("./helpers");
 
 const total = sum(4, 5);
 console.log("Total: ", total);
-```
+```  
+
+## How HTTP Works
+
+- HTTP(Hyper Text Transfer Protocol)
+- WWW communicates b/w web clients and servers
+- A Client(a browser) sends an HTTP request to the web (Server) and it receives the request and returns the HTTP response(O/P) to the browser.
 
 ## Node Js Core Modules
+
+__Creating HTTP Module in Node__
+
+- require -> To Load Node JS modules.
+- Create Server -> HTTP modules uses createServer() method to create an HTTP server.
+- HTTP Header -> For creating content type.
+- Port Number -> It Listens to the server ports and gives a response back to the client.
 
 <b>In app.js</b>   
 ```ruby
